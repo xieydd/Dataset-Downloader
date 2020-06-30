@@ -9,6 +9,7 @@
 Download different DataSet Collection
 
 #### 1. Imagenet
+When torrent dir file can`t use, see all, if can use, see 4 directly.
 
 1. ```sudo apt-get install aria2```
 
@@ -35,6 +36,8 @@ wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/
 
 Directly download in http://www.cs.toronto.edu/~kriz/cifar.html for tar file
 
+#### 3. COCO
+When torrent dir file can`t use, see imagenet 1 2 3, if can use, see below directly.
 
 #### 引用
 - [种子下载链接](http://academictorrents.com/collection/imagenet-2012)
