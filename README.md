@@ -47,6 +47,9 @@ WiderFace can download from google cloud and tencent cloud from [here](http://sh
 
 #### 6. LFW
 Labeled Faces in the Wild - aligned with deep funneling from site 1, this is not origin lfw dataset, if need, can download from site 1
+
+#### 7. Mnist
+Mnist raw file for test.
 #### 引用
 - [academic 种子下载链接](http://academictorrents.com/collection/)
 - [hyper.ai 种子](https://hyper.ai/datasets/)
