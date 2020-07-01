@@ -39,5 +39,14 @@ Directly download in http://www.cs.toronto.edu/~kriz/cifar.html for tar file
 #### 3. COCO
 When torrent dir file can`t use, see imagenet 1 2 3, if can use, see below directly.
 
+#### 4. CelebA
+Download torrent from hyper.ai/datasets/
+
+#### 5. WiderFace
+WiderFace can download from google cloud and tencent cloud from [here](http://shuoyang1213.me/WIDERFACE/)
+
+#### 6. LFW
+Labeled Faces in the Wild - aligned with deep funneling from site 1, this is not origin lfw dataset, if need, can download from site 1
 #### 引用
-- [种子下载链接](http://academictorrents.com/collection/imagenet-2012)
+- [academic 种子下载链接](http://academictorrents.com/collection/)
+- [hyper.ai 种子](https://hyper.ai/datasets/)
