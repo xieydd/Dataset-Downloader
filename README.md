@@ -78,6 +78,8 @@ https://github.com/TianzhongSong/awesome-SynthText
 - [检测读取脚本](https://github.com/WenmuZhou/OCR_DataSet/tree/master/dataset/det.py)
 - [识别读取脚本](https://github.com/WenmuZhou/OCR_DataSet/tree/master/dataset/rec.py)
 
+#### 9. MS-Celeb-1M
+Use this command `aria2c -c -j16 -s16 -x16 --follow-torrent=mem -o 'hyperai.torrent' 'https://hyper.ai/tracker/download?torrent=6470'`
 
 #### 引用
 - [academic 种子下载链接](http://academictorrents.com/)
