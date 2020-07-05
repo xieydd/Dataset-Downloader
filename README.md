@@ -43,8 +43,8 @@ When torrent dir file can`t use, see imagenet 1 2 3, if can use, see below direc
 Download torrent from hyper.ai/datasets/
 
 #### 5. WiderFace
-WiderFace can download from google cloud and tencent cloud from [here](http://shuoyang1213.me/WIDERFACE/)
-
+WiderFace can download from google cloud and tencent cloud from [here](http://shuoyang1213.me/WIDERFACE/) office.Or can download in [baiducloud](https://pan.baidu.com/s/1faHNz9ZrtEmr_yw48GW7ZA), code is `ievk`
+If you need CNNPoint for MTCNN Train, you can download it in [here](http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm).
 #### 6. LFW
 Labeled Faces in the Wild - aligned with deep funneling from site 1, this is not origin lfw dataset, if need, can download from site 1
 
