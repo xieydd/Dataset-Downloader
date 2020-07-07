@@ -1,7 +1,7 @@
 <!--
  * @Author: xieydd
  * @since: 2020-06-29 15:39:37
- * @lastTime: 2020-07-02 10:23:06
+ * @lastTime: 2020-07-07 10:54:32
  * @LastAuthor: Do not edit
  * @message: 
 --> 
@@ -80,6 +80,32 @@ https://github.com/TianzhongSong/awesome-SynthText
 
 #### 9. MS-Celeb-1M
 Use this command `aria2c -c -j16 -s16 -x16 --follow-torrent=mem -o 'hyperai.torrent' 'https://hyper.ai/tracker/download?torrent=6470'`
+
+
+#### 手势数据整理
+
+| | 图片数量|	2d/3d| 真实/生成 | 标注类型	|url|备注
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| VGG|	2686 张图，13050 个手（4170高质量大手）	| 2d| 真实|手部 bbox ，不过并不一定都是正的 bbox |http://www.robots.ox.ac.uk/~vgg/data/hands/	|
+VIVA Hand Detection Dataset	|54个视频	|2d|	真实|	手部 bbox|	http://cvrr.ucsd.edu/vivachallenge/index.php/hands/hand-detection/ |	2D bbox 信息，数据集场景为汽车内部驾驶员和乘客
+OneHand10K	|11703 张图|	2d|	真实|	手部关键点位置以及手部mask图像|	https://www.yangangwang.com/papers/WANG-MCC-2018-10.html|	每张图仅有一只手，图片真实世界采集，室内外场景都有
+MU HandImages ASL	|2425 张图|	2d|	真实|	手势类别信息（36种）|	http://www.massey.ac.nz/~albarcza/gesture_dataset2012.html|	手部基本占据整个图片，并且背景区域为黑。
+EgoHands | 48个 videos，2700 frames，15000 个手	|2d	|真实|	手部像素级别的标注信息（左手、右手、观察者手和对方手）|	http://vision.soic.indiana.edu/projects/egohands/	|数据集事件全部为两个人之间的交互，例如下棋、玩游戏，双方的手都出现在图中
+CVPR-HANDS 3D	|886个手势例子|	3d	|真实（Kinect采集）	|19 种动态手势类别，手部位置信息|	http://cvrr.ucsd.edu/LISA/hand.html	|数据集为司机驾驶汽车场景下手部信息或者车内乘客手部信息
+HandNet	|212928	|3d	|真实	|指尖和手掌位置信息和方向信息	|http://www.cs.technion.ac.il/~twerd/WetzlerSlossbergKimmel-BMVC15.pdf	|该数据集多用来作指尖检测
+11KHands	|11076 	|2d	|真实	|手掌人属性信息，包括性别，年龄等	|https://arxiv.org/pdf/1711.04322	|主要用来做性别识别和生物特征识别，手部占据整个图像，背景为白色
+Hand Images Databases	|3000	|2d	|真实	|手掌人属性信息，性别、年龄、职业等	|https://www.mutah.edu.jo/biometrix/hand-images-databases.html	|用于预测手部人物属性信息，分为手机和网络摄像头拍摄获取两种
+CMU Hand Dataset	|2800	|2d	|真实	|手部关键点信息|	http://domedb.perception.cs.cmu.edu/handdb.html	|该数据集论文方法识别关键点效果很好
+Hand Gesture dataset|	|2d|	生成|	手势类别|	http://www-vpu.eps.uam.es/DS/HGds/index.html	|
+NYU	|8252测试集和72757训练集|	3d|	真实|	| | 网站进不去详细信息没看到
+GANerated Hands Dataset	|330,000	|2d	|生成|	21个手部关键点的2D、3D坐标|	http://handtracker.mpi-inf.mpg.de/projects/GANeratedHands/GANeratedDataset.htm	|
+Large-scale Multiview 3D Hand Pose Dataset|	20, 500 different frames distributed in 21 sequences.|	3d|	真实|	bbox，关键点2D、3D坐标|	http://www.rovit.ua.es/dataset/mhpdataset/ |	多个视角拍摄手部
+EgoGesture Dataset | 2,081 RGB-D videos, 24,161 gesture samples and 2,953,224 frames |3d|	真实|	83种静态和动态的手势类别，video标注信息包含手势开始和结束帧号|	http://www.nlpr.ia.ac.cn/iva/yfzhang/datasets/egogesture.html	|中科院自动化所模式识别实验室构建的大型数据集
+MSRA Hand Gesture database| 9个人右手，每个人17种手势，每种手势500帧|	3d	|真实|	手势类别，手部 bbox 位置|	https://www.dropbox.com/s/c91xvevra867m6t/cvpr15_MSRAHandGestureDB.zip?dl=0	|官方论文网址进不去，失效
+ChaLearn Gesture Data 2011 | | | | | http://gesture.chalearn.org/data/cgd2011	
+Microsoft Kinect and Leap Motion Dataset|	14人采集，每人拍10种手势，每种手势10张图，共1400张图像	|3d|	真实|	|http://lttm.dei.unipd.it/downloads/gesture/	|
+SCUT-Ego-Finger Dataset | 93729 frames from 24 videos	|2d|	真实|	手部位置和关节点位置	|http://www.hcii-lab.net/data/SCUTEgoFinger/index.htm	
+SCUT-Ego-Gesture Dataset | 59,111 RGB images | 2d	|真实|	手部位置和关节点位置	|http://www.hcii-lab.net/data/SCUTEgoGesture/index.htm	
 
 #### 引用
 - [academic 种子下载链接](http://academictorrents.com/)
