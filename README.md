@@ -1,7 +1,7 @@
 <!--
  * @Author: xieydd
  * @since: 2020-06-29 15:39:37
- * @lastTime: 2020-07-07 10:54:32
+ * @lastTime: 2020-07-07 16:36:08
  * @LastAuthor: Do not edit
  * @message: 
 --> 
@@ -39,19 +39,14 @@ Directly download in http://www.cs.toronto.edu/~kriz/cifar.html for tar file
 #### 3. COCO
 When torrent dir file can`t use, see imagenet 1 2 3, if can use, see below directly.
 
-#### 4. CelebA
-Download torrent from hyper.ai/datasets/
-
-#### 5. WiderFace
+#### 4. WiderFace
 WiderFace can download from google cloud and tencent cloud from [here](http://shuoyang1213.me/WIDERFACE/) office.Or can download in [baiducloud](https://pan.baidu.com/s/1faHNz9ZrtEmr_yw48GW7ZA), code is `ievk`
 If you need CNNPoint for MTCNN Train, you can download it in [here](http://mmlab.ie.cuhk.edu.hk/archive/CNN_FacePoint.htm).
-#### 6. LFW
-Labeled Faces in the Wild - aligned with deep funneling from site 1, this is not origin lfw dataset, if need, can download from site 1
 
-#### 7. Mnist
+#### 5. Mnist
 Mnist raw file for test.
 
-#### 8. OCR
+#### 6. OCR
 [BaiduCloud](https://pan.baidu.com/s/1mRepVEvMa-U4e9ThiskVXg#list/path=%2F) code: 9s4x
 | 数据集                              | 主页                                                         | 适用情况  | 数据情况                                                     | 标注形式                                                     | 说明                                                         |
 | ----------------------------------- | ------------------------------------------------------------ | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -78,11 +73,26 @@ https://github.com/TianzhongSong/awesome-SynthText
 - [检测读取脚本](https://github.com/WenmuZhou/OCR_DataSet/tree/master/dataset/det.py)
 - [识别读取脚本](https://github.com/WenmuZhou/OCR_DataSet/tree/master/dataset/rec.py)
 
-#### 9. MS-Celeb-1M
-Use this command `aria2c -c -j16 -s16 -x16 --follow-torrent=mem -o 'hyperai.torrent' 'https://hyper.ai/tracker/download?torrent=6470'`
+#### 7. 人脸识别训练集
+|数据集名称|描述|下载|
+|----|----|----|
+|MS-Celeb-1M|MSRA 100K名人每人大约100张图|`aria2c -c -j16 -s16 -x16 --follow-torrent=mem -o 'hyperai.torrent' 'https://hyper.ai/tracker/download?torrent=6470'`|
+|CASIA-Webface|10K ids/0.5M images 网络半自动爬取IDMB |https://pan.baidu.com/s/1AfHdPsxJZBD8kBJeIhmq1w|
+|CelebA|10K ids/0.2M images 每张图片都做好了特征标记，包含人脸bbox标注框、5个人脸特征点坐标以及40个属性标记，CelebA由香港中文大学开放|Download torrent from hyper.ai/datasets/|
+|UMDFace |(8K ids/0.37M images) 该数据集包含367920张人脸，分别类属于8501个事件类别。提供的人脸信息包括，人脸框，人脸姿势，（yaw，pitch，roll），21个关键点，性别信息等。由于图片尺度，方向等的问题，使得该数据集不适合做人脸检测的训练，适合做人脸识别| https://pan.baidu.com/s/1aGutJwNWpV-lA0f_7eNsGQ |
+|VGG2 |(9K ids/3.31M images) 人物ID较多，且每个ID包含的图片个数也较多,覆盖大范围的姿态、年龄和种族,尽可能地使噪声最少.使用MS-Celeb-1M做预训练，再使用VGGFace2做finetune,能够取得更好的效果 |https://pan.baidu.com/s/1c3KeLzy|
+|MS1M-ArcFace | (85K ids/5.8M images)| https://pan.baidu.com/s/1S6LJZGdqcZRle1vlcMzHOQ|
+|Asian-Celeb |(94K ids/2.8M images) 亚洲人脸数据集|https://pan.baidu.com/s/12wSgofDy1flFf6lOyAxJRg|
+|DeepGlint| (181K ids/6.75M images)|https://pan.baidu.com/s/1yApUbklBgRgOyOV4o3J8Eg|
+|MegaFace| (672K ids/4.7M images) 华盛顿大学维护共包含690,572个身份共1,027,060张图像||
 
-
-#### 手势数据整理
+#### 8. 人脸识别验证集
+|数据集|描述|下载|
+|----|----|----|
+|LFW |LFW数据集共有13233张人脸图像，每张图像均给出对应的人名，共有5749人，且绝大部分人仅有一张图片，自然场景含多种影响因素。每张图片的尺寸为250X250，绝大部分为彩色图像，但也存在少许黑白人脸图片。|Labeled Faces in the Wild - aligned with deep funneling from site 1, this is not origin lfw dataset, if need, can download from site 1|
+|CFP-FP |(500 ids/7K images/7K pairs) 500个身份，每个身份有10个正脸，4个侧脸。评估方案：frontal-frontal (FF) and frontal-profile (FP) 人脸验证，有十个文件夹，每个文件夹有350个相同人和350个不同人。本文用CFP-FP进行挑战。||
+|AgeDB|户外数据集。包含12240个身份，每张图片都有关于身份、年龄和性别属性的注释。最小和最大年龄分别为3和101。测试数据：四组测试数据，对应不同的年间隔（5,10,20,30）||
+#### 9. 手势数据整理
 
 | | 图片数量|	2d/3d| 真实/生成 | 标注类型	|url|备注
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -107,7 +117,9 @@ Microsoft Kinect and Leap Motion Dataset|	14人采集，每人拍10种手势，�
 SCUT-Ego-Finger Dataset | 93729 frames from 24 videos	|2d|	真实|	手部位置和关节点位置	|http://www.hcii-lab.net/data/SCUTEgoFinger/index.htm	
 SCUT-Ego-Gesture Dataset | 59,111 RGB images | 2d	|真实|	手部位置和关节点位置	|http://www.hcii-lab.net/data/SCUTEgoGesture/index.htm	
 
+
 #### 引用
 - [academic 种子下载链接](http://academictorrents.com/)
 - [hyper.ai 种子](https://hyper.ai/datasets/)
 - [OCR_DataSet](https://github.com/WenmuZhou/OCR_DataSet)
+- [InsightFace DataSet Zoo](https://github.com/deepinsight/insightface/wiki/Dataset-Zoo)
